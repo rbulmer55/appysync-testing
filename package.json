@@ -1,0 +1,56 @@
+{
+    "name": "appsync-testing",
+    "version": "1.0.0",
+    "description": "AWS Appsync velocity testing library for nodejs",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest --runInBand --passWithNoTests --config=./jest.config.js",
+        "test:watch": "jest --runInBand --watch --passWithNoTests --config=./jest.config.js",
+        "test:coverage": "jest --coverage",
+        "lint": "eslint . --ext .ts",
+        "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/rbulmer55/appysync-testing.git"
+    },
+    "keywords": [
+        "aws",
+        "appsync",
+        "jest",
+        "testing",
+        "velocity",
+        "nodejs",
+        "awsamplify",
+        "amplify"
+    ],
+    "author": "Rob Bulmer",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rbulmer55/appysync-testing/issues"
+    },
+    "homepage": "https://github.com/rbulmer55/appysync-testing#readme",
+    "dependencies": {
+        "moment-timezone": "^0.5.33",
+        "uuid": "^8.3.2",
+        "velocityjs": "^2.0.3"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.22",
+        "@types/moment-timezone": "^0.5.13",
+        "@types/node": "^13.13.5",
+        "@types/uuid": "^7.0.3",
+        "@typescript-eslint/eslint-plugin": "^2.27.0",
+        "@typescript-eslint/parser": "^2.27.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-typescript": "^7.2.1",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier": "^2.0.4",
+        "jest": "^27.3.1",
+        "ts-jest": "^27.0.5",
+        "typescript": "^4.4.4"
+    }
+}
